@@ -10,12 +10,6 @@ function Inicio () {
 
     const [menuIsVisible, setMenuIsVisible] = useState(false)
 
-
-    const imagens = [
-        { id: '1', title: 'GROUP_NORD', subTitle: 'Distribuidora de bebidas', lowTitle: 'Desde 2023', image: 'https://images2.alphacoders.com/473/473240.jpg'},
-        { id: '2', title: 'GROUP_NORD', subTitle: 'Distribuidora de perfumes', lowTitle: 'Desde 2023', image: 'https://images3.alphacoders.com/641/641460.jpg'}
-    ]
-
     const sales = [
         {id: '1', description: 'Cachaça Aviador Prata 500ml', price: 'R$ 51,12', promotion: '20% de desconto', saleImg: 'https://a-static.mlcdn.com.br/800x560/cachaca-aviador-prata-500ml/produtosaviador/15983946398/13cf5376190f5661d5abc6bdc54aa797.jpeg'},
         {id: '2', description: 'Vinho Argentino Viejo Viñedo Red Wine - RPB S.A.', price: 'R$ 14,03', promotion: '30% de desconto', saleImg: 'https://a-static.mlcdn.com.br/800x560/vinho-argentino-viejo-vinedo-red-wine-rpb-s-a/divvino/4566993/096c0b3c04ced9def0c557f9c6cb79d5.jpeg'},
@@ -27,10 +21,17 @@ function Inicio () {
         {id: '8', description: 'Smartphone Poco X5 Pro 5G 8 RAM 256GB PRETO - XAIOMI', price: 'R$ 1,00', promotion: 'É pegar ou largar meu chapa', saleImg: 'https://a-static.mlcdn.com.br/800x560/smartphone-poco-x5-pro-5g-8gb-256gb-preto-xiaomi/simcomercio2/pcx55gpt256/9693025923c141e08e79ddb7ee47d392.jpeg'}
     ]
 
-
+    const [dataCarousel, setDataCarousel] = useState([])
     const [data, setData] = useState([]);
     const carousel= useRef(null);
 
+
+    useEffect(() => {
+        fetch('https://my-json-server.typicode.com/Raul-Carneiro-dev/FakeApi-teste/carousel')
+        .then((response) => response.json())
+        .then(setDataCarousel)
+
+    },[])
 
     useEffect(() => {
         fetch('https://my-json-server.typicode.com/Raul-Carneiro-dev/FakeApi-teste/produtos') 
@@ -64,7 +65,7 @@ function Inicio () {
         <Header setMenuIsVisible={setMenuIsVisible}/>
         <div className="swiper-container">
         <Swiper effect="fade" slidesperview={1} pagination={{clickable: true}} >
-            {imagens.map( (item) => (
+            {dataCarousel.map( (item) => (
                 <SwiperSlide key={item.id}>
                     <div id="carousel-container">
                         <img src={item.image} alt="slider" className="slide-item"/>
