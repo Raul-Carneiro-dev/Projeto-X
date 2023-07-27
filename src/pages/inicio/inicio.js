@@ -8,7 +8,7 @@ import MenuMobile from "../../components/menuMobile/menumobile";
 
 function Inicio () {
 
-    const [menuIsVisible, setMenuIsVisible] = useState(false)
+    const [menuIsVisible, setMenuIsVisible] = useState(false);
 
     const sales = [
         {id: '1', description: 'Cachaça Aviador Prata 500ml', price: 'R$ 51,12', promotion: '20% de desconto', saleImg: 'https://a-static.mlcdn.com.br/800x560/cachaca-aviador-prata-500ml/produtosaviador/15983946398/13cf5376190f5661d5abc6bdc54aa797.jpeg'},
@@ -21,7 +21,7 @@ function Inicio () {
         {id: '8', description: 'Smartphone Poco X5 Pro 5G 8 RAM 256GB PRETO - XAIOMI', price: 'R$ 1,00', promotion: 'É pegar ou largar meu chapa', saleImg: 'https://a-static.mlcdn.com.br/800x560/smartphone-poco-x5-pro-5g-8gb-256gb-preto-xiaomi/simcomercio2/pcx55gpt256/9693025923c141e08e79ddb7ee47d392.jpeg'}
     ]
 
-    const [dataCarousel, setDataCarousel] = useState([])
+    const [dataCarousel, setDataCarousel] = useState([]);
     const [data, setData] = useState([]);
     const carousel= useRef(null);
 
@@ -31,7 +31,7 @@ function Inicio () {
         .then((response) => response.json())
         .then(setDataCarousel)
 
-    },[])
+    },[]);
 
     useEffect(() => {
         fetch('https://my-json-server.typicode.com/Raul-Carneiro-dev/FakeApi-teste/produtos') 
