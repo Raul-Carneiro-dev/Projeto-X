@@ -33,7 +33,7 @@ function Inicio () {
 
 
     useEffect(() => {
-        fetch('http://localhost:3000/static/sales.json') 
+        fetch('https://my-json-server.typicode.com/Raul-Carneiro-dev/FakeApi-teste/produtos') 
         .then((response) => response.json())
         .then(setData)
 
