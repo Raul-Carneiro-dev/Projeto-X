@@ -1,24 +1,24 @@
 [
   {
     "id": "1",
-    "description": "Cachaça Aviador Prata 500ml" ,
-    "price": "R$ 51,12",
-    "promotion": "20% de desconto",
-    "image": "https://a-static.mlcdn.com.br/800x560/cachaca-aviador-prata-500ml/produtosaviador/15983946398/13cf5376190f5661d5abc6bdc54aa797.jpeg"
+    "description": "Notebook Asus M515 AMD Ryzen 5 8GB 256GB SSD - 15,6” Endless OS" ,
+    "price": "R$ 2.519,10",
+    "promotion": "10% de desconto",
+    "image": "https://a-static.mlcdn.com.br/800x560/notebook-asus-m515-amd-ryzen-5-8gb-256gb-ssd-156-endless-os/magazineluiza/235580900/c8ed6e6c6e7d043a5dca5c8a6ac07914.jpg"
   },
   {
     "id": "2",
-    "description": "Vinho Argentino Viejo Viñedo Red Wine - RPB S.A." ,
-    "price": "R$ 14,03",
-    "promotion": "30% de desconto",
-    "image": "https://a-static.mlcdn.com.br/800x560/vinho-argentino-viejo-vinedo-red-wine-rpb-s-a/divvino/4566993/096c0b3c04ced9def0c557f9c6cb79d5.jpeg"
+    "description": "Computador Completo Intel Core I5 8gb Ssd 256gb Teclado e Mouse com Monitor 19 - Brazil Pc - BRAZILPC" ,
+    "price": "R$ 1.063,99",
+    "promotion": "5% de desconto",
+    "image": "https://a-static.mlcdn.com.br/800x560/computador-completo-intel-core-i5-8gb-ssd-256gb-teclado-e-mouse-com-monitor-19-brazil-pc-brazilpc/compraokmatriz/913/47875ce21cacd3446cd497ab64a660f3.jpeg"
   },
   {
     "id": "3",
-    "description": "Kit Protetor Solar Corporal Helioderm Suncare FPS 30 120ml" ,
-    "price": "R$ 45,09",
+    "description": "Notebook Samsung Book Intel Core i5 8GB 256GB SSD - 15,6” Full HD Windows 11" ,
+    "price": "R$ 2.789,10",
     "promotion": "10% de desconto",
-    "image": "https://a-static.mlcdn.com.br/800x560/kit-protetor-solar-corporal-helioderm-suncare-fps-30-120ml-facial-antioleosidade-fps-50-50g/drogariaaraujosa/849219/7e33626dc75abc91d8a3b6d666260cde.jpeg"
+    "image": "https://a-static.mlcdn.com.br/800x560/notebook-samsung-book-intel-core-i5-8gb-256gb-ssd-156-full-hd-windows-11/magazineluiza/234099300/1dae9242b5dd61a5736f155930b95ebf.jpg"
   },
   {
     "id": "4",

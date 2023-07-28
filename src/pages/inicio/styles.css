@@ -87,7 +87,7 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
-    box-shadow:    #000000a8;
+    box-shadow: #000000a8;
     
 }
 
@@ -196,6 +196,14 @@
 
     .carousel-buttons {
         display: none;
+    }
+
+    .saleBox-carousel-content {
+        padding: 1rem;
+    }
+
+    .sale-img {
+        width: 220px;
     }
      
 }
